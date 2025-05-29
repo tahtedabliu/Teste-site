@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fa;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    background: #004080;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.section {
+    padding: 4em 0;
+    text-align: center;
+}
+.produtos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 2em;
+}
+.produto-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1em;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+.produto-card:hover {
+    transform: translateY(-10px);
+}
+.produto-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    background: #00264d;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 500px;
+    margin: auto;
+}
+input, textarea {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #003366;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .produtos-grid {
+        flex-direction: column;
+    }
+}
