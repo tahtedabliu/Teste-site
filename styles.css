@@ -28,6 +28,7 @@ header {
     height: 50px;
     vertical-align: middle;
     float:left;
+    margin-right: 10px; 
 }
 
 .navbar a {
