@@ -25,10 +25,10 @@ header {
 
 
 .logo {
-    height: 50px;
+    height: 30px;
     vertical-align: middle;
     float:left;
-    margin-right: 10px; 
+    margin-right: 5px; 
 }
 
 .navbar a {
