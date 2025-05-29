@@ -27,6 +27,7 @@ header {
 .logo {
     height: 50px;
     vertical-align: middle;
+    horizontal-align: right;
 }
 
 .navbar a {
