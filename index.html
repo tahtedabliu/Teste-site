@@ -1,96 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Empresa</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrecisionLens</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="background-azul">
     <header>
-        <h1>Minha Empresa</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="imagens/undefined.png" alt="Logo PrecisionLens" class="logo-img">
+          <a href="#">PrecisionLens</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-bar">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
-
-    <section id="inicio">
-        <h2>Bem-vindo!</h2>
-        <p>Conheça nossa empresa e nossos produtos inovadores.</p>
-    </section>
-
-    <section id="historia">
-        <h2>Nossa História</h2>
-        <p>Aqui está um pouco sobre nossa jornada.</p>
-    </section>
-
-    <section id="produtos">
-        <h2>Produtos</h2>
-        <div class="produto-container">
-            <div class="produto">
-                <img src="produto1.jpg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p>Descrição do produto 1.</p>
-            </div>
-            <div class="produto">
-                <img src="produto2.jpg" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>Descrição do produto 2.</p>
-            </div>
-            <div class="produto">
-                <img src="produto3.jpg" alt="Produto 3">
-                <h3>Produto 3</h3>
-                <p>Descrição do produto 3.</p>
-            </div>
-            <div class="produto">
-                <img src="produto4.jpg" alt="Produto 4">
-                <h3>Produto 4</h3>
-                <p>Descrição do produto 4.</p>
-            </div>
+ 
+    <main>
+      <!-- Banner Hero -->
+      <section class="hero section" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+          <div class="main-text">
+            <h1>Drones e AGVs para logística e controle de qualidade</h1>
+            <h2>Soluções inteligentes para um padrão automotivo superior.</h2>
+            <p class="lead">A inovação que revoluciona a qualidade automotiva.</p>
+            <a href="#contato" class="btn-gradient">Fale Conosco</a>
+          </div>
+          <div class="main-img">
+            <img src="imagens/empresa.jfif" alt="Equipe Precision Lens feliz">
+          </div>
         </div>
-    </section>
-
-    <section id="quem-somos">
-        <h2>Quem Somos</h2>
-        <p>Conheça nossa missão, visão e valores.</p>
-        <div class="info-empresa">
-            <div class="card">
-                <h3>Missão</h3>
-                <p>Oferecer produtos de alta qualidade para nossos clientes.</p>
+      </section>
+ 
+      <!-- Seção de Produtos com Cards -->
+      <section class="produtos-section section" id="produtos">
+        <div class="container">
+          <h2>Nossos Produtos</h2>
+          <div class="produtos-lista">
+            <div class="produto-card">
+              <img src="imagens/drone 2.png" alt="Super Soprador">
+              <h3>PL-V2</h3>
+              <p>Transporta itens de forma autonoma.</p>
             </div>
-            <div class="card">
-                <h3>Visão</h3>
-                <p>Ser referência no mercado com inovação e excelência.</p>
+            <div class="produto-card">
+              <img src="imagens/drone 1.png" alt="Detector de Imperfeições">
+              <h3>PL-V3</h3>
+              <p>Além de transporte identifica riscos, amassados e áreas mal pintadas em veiculos.</p>
             </div>
-            <div class="card">
-                <h3>Valores</h3>
-                <p>Compromisso, qualidade e respeito ao cliente.</p>
+            <div class="produto-card">
+              <img src="imagens/agv3.jfif" alt="Kit Profissional">
+              <h3>PVA-V2</h3>
+              <p>Transporta itens de forma autonoma, detectando a necessecidade reabastecimento .</p>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Envie-nos uma mensagem!</p>
-        <form id="contato-form">
-            <input type="text" id="nome" placeholder="Seu nome" required>
-            <input type="email" id="email" placeholder="Seu e-mail" required>
-            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="mensagem-status"></p>
-    </section>
-
+      </section>
+ 
+      <!-- Seção História com imagem lateral -->
+      <section class="historia-section section" id="historia">
+        <div class="container historia-container">
+          <div class="historia-img">
+            <img src="historia.jpg" alt="Nossa História">
+          </div>
+          <div class="historia-text">
+            <h2>História</h2>
+            <p>A Precision Lens surgiu em 2018, no interior de São Paulo, engenheiros automotivos e especialistas em IA tiveram uma ideia, com o objetivo de criar uma solução autônoma para inspeção de veículos. Em 2019, foi desenvolvido o primeiro protótipo: um drone e um carrinho terrestre com sensores para análises básicas. </p>
+            <p>A empresa foi formalmente fundada em 2020, focando em visão computacional e precisão. Em 2021,fechou parcerias com duas montadoras e um centro logístico, implementando sua solução de inspeção autônoma em ambientes controlados. Em 2022, lançou o PL-V2, com IA para detecção de danos, integração em nuvem e geração de mapas 3D. </p>
+            <p>Em 2023, entrou em um programa de aceleração, recebeu investimento e expandiu a equipe. Já em 2024, se consolidou no mercado automotivo brasileiro com contratos com concessionárias e empresas de frotas. Em 2025, iniciou a expansão internacional com o lançamento do PL-V3, com navegação autônoma avançada e integração via API (um conjunto de regras e protocolos que permitem que diferentes softwares interajam e compartilhem dados e funcionalidades).Atualmente, a Precision Lens é referência em automação no setor automotivo, unindo eficiência, segurança e inovação, e continua a escrever seu futuro com tecnologia de ponta.
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Quem Somos com destaque visual -->
+      <section class="quem-somos-section section" id="quem-somos">
+        <div class="container quem-somos-container">
+          <div class="quem-somos-text">
+            <h2>Quem Somos</h2>
+            <p>
+              Somos uma empresa nacional de médio porte que atua na área automotiva, especializada na identificação de danos na lataria e na pintura de veículos. Nosso trabalho é feito com cuidado e tecnologia de ponta, sempre buscando oferecer um serviço preciso e confiável.
+            </p>
+          </div>
+          <div class="quem-somos-img">
+            <img src="equipe.jpg" alt="Equipe PrecisionLens">
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Depoimentos/Clientes -->
+      <section class="depoimentos-section section" id="depoimentos">
+        <div class="container depoimentos-container">
+          <h2>Depoimentos</h2>
+          <div class="depoimentos-lista">
+            <div class="depoimento-card">
+              <p>"A qualidade dos produtos PrecisionLens é incomparável! Recomendo para todos que querem excelência."</p>
+              <span>- Leonardo S.</span>
+            </div>
+            <div class="depoimento-card">
+              <p>"O atendimento é excelente e os resultados no meu negócio foram imediatos."</p>
+              <span>- ¨Talita P.</span>
+            </div>
+            <div class="depoimento-card">
+              <p>"Tecnologia nacional de ponta! Parabéns a toda equipe."</p>
+              <span>- Rafael M.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Contato -->
+      <section class="contato-section section" id="contato">
+        <div class="container contato-container">
+          <h2>Contato</h2>
+          <form class="contato-form">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit" class="btn-gradient">Enviar</button>
+            
+          </form>
+          <div class="contato-info">
+            <p><strong>Email:</strong> contato@PrecisionLens.com</p>
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p><strong>Endereço:</strong> Av. das Empresas, 123 - São Paulo, SP</p>
+          </div>
+        </div>
+      </section>
+    </main>
+ 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Minha Empresa - Todos os direitos reservados</p>
+      <div class="container footer-container">
+        <p>&copy; 2025 PrecisionLens. Todos os direitos reservados.</p>
+        <nav class="nav-footer">
+          <a href="#inicio">Início</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
     </footer>
+  </div>
 </body>
-</html>
 
+</html>
+ 
